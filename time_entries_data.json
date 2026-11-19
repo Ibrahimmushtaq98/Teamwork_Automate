@@ -1,0 +1,44 @@
+{
+    "project_name": "Resonant Solutions",
+    "timezone": "America/Toronto",
+    "time_entries": [
+        {
+            "WEEKDAY": ["MONDAY", "TUESDAY", "WEDNESDAY", "THURSDAY", "FRIDAY"],
+            "description": "Team Huddle",
+            "task_list": "Admin (RS Core)",
+            "task": "Meetings & Communications",
+            "billable": false,
+            "time_start": "09:00:00",
+            "time_end": "09:30:00",
+            "type": "REGULAR"
+        },
+        {
+            "WEEKDAY": ["MONDAY", "TUESDAY", "WEDNESDAY", "THURSDAY", "FRIDAY"],
+            "description": "Labourly Standup",
+            "task_list": "Labourly",
+            "task": "Meetings",
+            "billable": false,
+            "time_start": "09:30:00",
+            "time_end": "10:00:00",
+            "type": "REGULAR"
+        },
+        {
+            "WEEKDAY": ["MONDAY", "TUESDAY", "WEDNESDAY", "THURSDAY", "FRIDAY"],
+            "description": "Labourly Improvment (Code)",
+            "task_list": "Labourly",
+            "task": "Coding",
+            "billable": false,
+            "time_start": "10:00:00",
+            "time_end": "17:00:00",
+            "type": "REGULAR"
+        }
+    ],
+    "stat_holiday": {
+        "task_list": "Labourly",
+        "task": "Statutory Holiday",
+        "billable": false,
+        "time_start": "09:00:00",
+        "hours": 8,
+        "move_weekend_holidays_to_next_weekday": true
+    }
+}

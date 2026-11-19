@@ -33,6 +33,16 @@ class TeamworkClient:
         response = requests.get(url=url, headers=self.header, params=query_param)
         return response
     
+    def get_me(self):
+        url = f"{self.url}/projects/api/v3/me.json"
+        response = requests.get(url=url, headers=self.header)
+        return response
+
+    def get_time_entries(self, query_param=None):
+        url = f"{self.url}/projects/api/v3/time.json"
+        response = requests.get(url=url, headers=self.header, params=query_param)
+        return response
+
     def post_time_entry_from_task(self, taskId, timeLog):
         url = f"{self.url}/projects/api/v3/tasks/{taskId}/time.json"
         response = requests.post(url=url, headers=self.header, json=timeLog)
